@@ -1,0 +1,236 @@
+.page-background-width {
+    width: 1440px;
+}
+
+.content-width {
+    width: 1100px;
+    max-width: 1100px;
+}
+
+
+#header {
+    height: 176px;
+}
+
+#claudia-rios-alvarez {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #35242C;
+}
+
+#portfolio {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 3.5px;
+    color: #35242C;
+}
+
+#about-me{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 3.5px;
+    color: #8F3F4E;
+}
+
+#presentation {
+    height: 488px;
+}
+
+#english {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;    
+    color: #8F3F4E;
+}
+
+#spanish {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(53, 36, 44, 0.8);
+}
+
+#clau-picture-and-presentation{
+    padding-top: 8px;
+}
+
+#clau-picture {
+    height: 460px;
+    width: 445px;
+}
+
+#presentation-text{
+    height: 326px;
+}
+
+#presentation-title-and-subtitle{
+    height: 40%;
+}
+
+#presentation-paraphs{
+    height: 60%;
+}
+
+.presentation-text{
+    font-family: Futura PT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #35242C;
+}
+
+#my-projects-background {
+    margin-top: 120px;
+    background: #F5F5F5;
+    max-width: 1440px;
+    height: 420px;
+}
+
+#my-projects {
+    height: 205px;
+}
+
+#my-projects-padding{
+    padding-top:64px;
+}
+
+.project-text{
+    margin-top: 16px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: #35242C;
+}
+
+.view-projects-text {
+    margin-top: 15px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    color: #8F3F4E;
+}
+
+.view-projects-text a {
+    color: #8F3F4E;
+}
+
+.project{
+    padding-left: 24px;
+    padding-top: 24px;
+}
+
+#ux-ui-design-image{
+    height: 82px;
+    width: 107px;
+}
+
+#industrial-design-image{
+    height: 82px;
+    width: 141px;
+}
+
+#printing-image {
+    height: 82px;
+    width: 125px;
+}
+
+#contact-me-container{
+    height: 359px;
+    margin-top: 72px;
+}
+
+#contact-me {
+    height: 280px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#contact-me-left{
+    height: 200px;  
+    width: 284px;
+    padding-left: 65px;
+}
+
+#contact-me-right {
+    height: 200px;
+    width: 233px;
+    padding-left: 119px;
+}
+
+.contact-me-text{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #35242C;
+    padding-left: 16px;
+}
+
+.contact-me-icon {
+    height: 32px;
+    width: 32px;
+}
+
+.padding-zero{
+    padding: 0;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.max-height {
+    height: 100%;
+}
+
+h1, h2, h3, h4 {
+    font-family: Montserrat;
+    font-style: normal;
+    color: #35242C; 
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 68px;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 42px;
+}
+
+h4{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+}
