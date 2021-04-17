@@ -1,0 +1,9 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(./../resources/fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: Futura PT;
+    src: url(./../resources/fonts/FuturaPTLight.otf);
+}

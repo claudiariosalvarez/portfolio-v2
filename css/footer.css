@@ -1,11 +1,10 @@
 footer {
-    height: 187px;
     max-width: 1440px;
     margin-top: 65px;
 }
 
-.footer-main-container{
-    padding-top: 48px;
+#footer-main-container{
+    height: 187px;
 }
 
 .footer-main-text{
@@ -31,4 +30,8 @@ footer {
     font-size: 14px;
     line-height: 19px;
     color: #8F3F4E;
+}
+
+#line {
+    border: 1px solid rgba(53, 36, 44, 0.1);
 }
