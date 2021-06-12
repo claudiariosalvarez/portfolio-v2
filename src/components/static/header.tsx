@@ -1,6 +1,6 @@
 import './header.css'
 
-function PortfolioHeader() {
+function Header() {
     return (
         <header>
             <div className="d-flex justify-content-center">
@@ -20,4 +20,4 @@ function PortfolioHeader() {
     );
 }
 
-export default PortfolioHeader
+export default Header
