@@ -27,24 +27,13 @@ function AboutMe() {
                                 <div id="presentation-paraphs" className=" d-flex flex-column justify-content-around">
                                     <div className="presentation-text">
                                         I´m a design enthusiast in all of its shapes. I started with industrial design and
-                                        3D
-                                        printing,
-                                        but
-                                        now,
-                                        I’ve discovered my real desire: User experience and interface design.
-                                </div>
+                                        3D printing, but now, I’ve discovered my real desire: User experience and interface design.
+                                    </div>
                                     <div className="presentation-text">
                                         I consider myself to be a very open-minded and proactive person. Also, I enjoy
-                                        public
-                                        speaking
-                                        and
-                                        working in teams. After my bootcamp on UX and UI design and my experience in
-                                        Habitant, I
-                                        have
-                                        the
-                                        skills
-                                        and knowledge to face my next challenge.
-                                </div>
+                                        public speaking and working in teams. After my bootcamp on UX and UI design and my experience in
+                                        Habitant, I have the skills and knowledge to face my next challenge.
+                                    </div>
                                 </div>
                             </div>
                         </div>
