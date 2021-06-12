@@ -98,7 +98,7 @@ export default class AboutMe extends React.Component<{}, IState> {
                         <div id="my-projects-padding" className="d-flex justify-content-center">
                             <div className="content-width">
                                 <div className="row">
-                                    <h3>My projects</h3>
+                                    <h3>{this.state.texts.myProjectsTitle}</h3>
                                 </div>
                                 <div id="my-projects" className="row d-flex justify-content-lg-between">
                                     <div className="padding-zero project-card">
