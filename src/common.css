@@ -1,0 +1,17 @@
+.language {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(53, 36, 44, 0.8);
+}
+
+#selectedLanguage {
+    font-weight: 600;
+    color: #8F3F4E;
+}
+
+.language:hover {
+    cursor: pointer;
+}

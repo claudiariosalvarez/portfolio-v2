@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import AboutMe from './components/aboutMe'
+import './common.css'
+import AboutMe from './components/aboutMe/aboutMe'
 import Header from './components/static/header';
 import Footer from './components/static/footer';
 
