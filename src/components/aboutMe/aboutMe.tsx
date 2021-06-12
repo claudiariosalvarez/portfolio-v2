@@ -1,6 +1,6 @@
 import React from 'react';
 import './aboutMe.css'
-import { Languages, getText } from './../languages';
+import { Languages, getText } from '../../languages';
 interface IState {
     texts: ITexts
 }

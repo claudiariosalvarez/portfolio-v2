@@ -1,4 +1,4 @@
-import json from './../texts.json';
+import json from './texts.json';
 
 export enum Languages {
     ENGLISH,
