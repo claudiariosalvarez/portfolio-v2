@@ -1,0 +1,13 @@
+.page-width {
+    max-width: 1440px;
+    width: 1440px;
+}
+
+.content-width {
+    width: 1110px;
+    max-width: 1110px;
+}
+
+.max-height {
+    height: 100%;
+}

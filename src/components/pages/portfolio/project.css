@@ -1,0 +1,73 @@
+#preTitle{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 2px;
+    color: #BE6F72; 
+}
+
+#projectTitle{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #35242C;
+}
+
+#projectSubTitle {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #35242C;
+}
+
+.projectText{
+    font-family: Futura PT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #35242C;
+    width: 444px;
+}
+
+#picture{
+    padding-top: 75px;
+    height: 435px;
+}
+
+#content{
+    padding-top: 75px;
+    padding-bottom: 61px;
+}
+
+.paddingBetweenTexts{
+    padding-bottom: 16px;
+}
+
+#moreInfoText{
+    font-family: Futura PT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #35242C;
+}
+
+#links{
+    padding-top: 16px;
+}
+
+.linkImage{
+    padding-left: 16px;
+}
+
+.linkImageSize{
+    height: 40px;
+    width: 40px;
+}

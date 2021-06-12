@@ -1,0 +1,37 @@
+#subMenu{
+    padding-top: 39px;
+    padding-bottom: 48px;
+}
+
+.subMenuItem {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 3.5px;
+    color: rgba(53, 36, 44, 0.8);
+}
+
+#carrousel {
+    height: 556px;
+    background: #FFFFFF;
+}
+
+.carrouselBtn{
+    height: 40px;
+    width: 40px;
+}
+
+#previousProjectBtn{
+    padding-bottom: 8px;
+}
+
+#nextProjectBtn {
+    padding-top: 8px;
+}
+
+#portfolioContent{
+    height: 780px;
+    background: #F5F5F5;
+}

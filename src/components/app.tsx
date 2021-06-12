@@ -2,10 +2,10 @@ import React from "react"
 import { HashRouter, Route, Switch } from "react-router-dom"
 import { Languages } from "../languages"
 import { Pages } from "../pages"
-import AboutMe from "./aboutMe/aboutMe"
-import { Portfolio } from "./portfolio/portfolio"
-import Footer from "./static/footer"
-import Header from "./static/header"
+import AboutMe from "./pages/aboutMe/aboutMe"
+import { Portfolio } from "./pages/portfolio/portfolio"
+import Footer from "./footer/footer"
+import Header from "./header/header"
 
 interface IState {
     currentPage: Pages,
