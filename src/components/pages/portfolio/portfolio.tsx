@@ -2,20 +2,38 @@ import React from "react";
 import { Languages } from "../../../languages";
 import './portfolio.css'
 import Project from "./project";
+import { ProjectTypes } from "./projectTypes";
 
 
 interface IProps {
     language: Languages;
 }
 
+interface IState {
+    selectedProjectType: ProjectTypes;
+}
+
 const MODULE = "porfolio";
 
-export class Portfolio extends React.Component<IProps, {}> {
+export class Portfolio extends React.Component<IProps, IState> {
 
     constructor(props: IProps) {
         super(props);
 
-        this.state = {}
+        this.state = {
+            selectedProjectType: ProjectTypes.ALL
+        }
+    }
+
+    private selectSubMenuItem(projectType: ProjectTypes): void {
+        this.setState({ selectedProjectType: projectType });
+    }
+
+    private getSelectedSubMenuItemId(projectType: ProjectTypes): String {
+        if (projectType !== this.state.selectedProjectType) {
+            return "";
+        }
+        return "selectedSubMenuItem";
     }
 
     public render() {
@@ -26,19 +44,23 @@ export class Portfolio extends React.Component<IProps, {}> {
                         <div className="content-width">
                             <div className="d-flex flex-row justify-content-start">
                                 <div className="d-flex flex-column justify-content-center">
-                                    <a className="subMenuItem">ALL</a>
+                                    <a id={this.getSelectedSubMenuItemId(ProjectTypes.ALL).toString()} className="subMenuItem"
+                                        onClick={() => this.selectSubMenuItem(ProjectTypes.ALL)}>ALL</a>
                                 </div>
                                 <img id="vertical-bar-separator" src="./pictures/vertical_bar.svg" alt="Separator" />
                                 <div className="d-flex flex-column justify-content-center">
-                                    <a className="subMenuItem">UX/UI DESIGN</a>
+                                    <a id={this.getSelectedSubMenuItemId(ProjectTypes.UX_UI_DESIGN).toString()} className="subMenuItem"
+                                        onClick={() => this.selectSubMenuItem(ProjectTypes.UX_UI_DESIGN)}>UX/UI DESIGN</a>
                                 </div>
                                 <img id="vertical-bar-separator" src="./pictures/vertical_bar.svg" alt="Separator" />
                                 <div className="d-flex flex-column justify-content-center">
-                                    <a className="subMenuItem">INDUSTRIAL DESIGN</a>
+                                    <a id={this.getSelectedSubMenuItemId(ProjectTypes.INDUSTRIAL_DESIGN).toString()} className="subMenuItem"
+                                        onClick={() => this.selectSubMenuItem(ProjectTypes.INDUSTRIAL_DESIGN)}>INDUSTRIAL DESIGN</a>
                                 </div>
                                 <img id="vertical-bar-separator" src="./pictures/vertical_bar.svg" alt="Separator" />
                                 <div className="d-flex flex-column justify-content-center">
-                                    <a className="subMenuItem">3D PRINTING</a>
+                                    <a id={this.getSelectedSubMenuItemId(ProjectTypes.PRINTING).toString()} className="subMenuItem"
+                                        onClick={() => this.selectSubMenuItem(ProjectTypes.PRINTING)}>3D PRINTING</a>
                                 </div>
                             </div>
                         </div>

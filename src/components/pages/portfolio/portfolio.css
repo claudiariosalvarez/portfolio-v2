@@ -13,6 +13,11 @@
     color: rgba(53, 36, 44, 0.8);
 }
 
+#selectedSubMenuItem{
+    color: #8F3F4E;
+    font-weight: bold;
+}
+
 #carrousel {
     height: 556px;
     background: #FFFFFF;
