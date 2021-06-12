@@ -1,10 +1,20 @@
 {
-    "aboutMe":{
+    "header": {
+        "english": {
+            "aboutMeTitle": "About me",
+            "languageText": "Language"
+        },
+        "spanish": {
+            "aboutMeTitle": "Sobre mí",
+            "languageText": "Idioma"
+        }
+    },
+    "aboutMe": {
         "english": {
             "presentationTitle": "Hi, I’m Clau!",
             "presentationSubTitle": "UX/UI Designer",
             "presentationTextFirstParagraph": "I´m a design enthusiast in all of its shapes. I started with industrial design and 3D printing, but now, I’ve discovered my real desire: User experience and interface design.",
-            "presentationTextSecondParagraph":  "I consider myself to be a very open-minded and proactive person. Also, I enjoy public speaking and working in teams. After my bootcamp on UX and UI design and my experience in Habitant, I have the skills and knowledge to face my next challenge.",
+            "presentationTextSecondParagraph": "I consider myself to be a very open-minded and proactive person. Also, I enjoy public speaking and working in teams. After my bootcamp on UX and UI design and my experience in Habitant, I have the skills and knowledge to face my next challenge.",
             "myProjectsTitle": "My projects",
             "UXUIDesignText": "UX/UI DESIGN",
             "industrialDesignText": "INDUSTRIAL DESIGN",
@@ -12,13 +22,12 @@
             "viewProjectsText": "View projects",
             "contactMeTitle": "Contact me",
             "downloadMyCVText": "Download my CV"
-
         },
         "spanish": {
             "presentationTitle": "Hola, soy Clau!",
             "presentationSubTitle": "Diseñadora UX/UI",
             "presentationTextFirstParagraph": "Párrafo 1",
-            "presentationTextSecondParagraph":  "Párrafo 2",
+            "presentationTextSecondParagraph": "Párrafo 2",
             "myProjectsTitle": "Mis proyectos",
             "UXUIDesignText": "DISEÑO UX/UI",
             "industrialDesignText": "DISEÑO INDUSTRIAL",
@@ -28,5 +37,5 @@
             "downloadMyCVText": "Descarga mi CV"
         }
     },
-    "porfolio":{}
+    "porfolio": {}
 }

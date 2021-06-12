@@ -1,6 +1,11 @@
 import React from 'react';
 import './aboutMe.css'
 import { Languages, getText } from '../../languages';
+
+interface IProps {
+    language: Languages,
+}
+
 interface IState {
     texts: ITexts
 }
@@ -20,39 +25,37 @@ interface ITexts {
 }
 
 const MODULE = "aboutMe";
+export default class AboutMe extends React.Component<IProps, IState> {
 
-export default class AboutMe extends React.Component<{}, IState> {
-    private language: Languages;
-
-    constructor(props: {}) {
+    constructor(props: IProps) {
         super(props);
-
-        this.language = Languages.ENGLISH;
-        this.state = this.getUpdatedState();
+        
+        this.state = this.getUpdatedState(this.props.language);
     }
 
-    private getUpdatedState() {
+    private getUpdatedState(language: Languages): IState {
         return {
             texts: {
-                presentationTitle: getText(MODULE, this.language, "presentationTitle"),
-                presentationSubTitle: getText(MODULE, this.language, "presentationSubTitle"),
-                presentationTextFirstParagraph: getText(MODULE, this.language, "presentationTextFirstParagraph"),
-                presentationTextSecondParagraph: getText(MODULE, this.language, "presentationTextSecondParagraph"),
-                myProjectsTitle: getText(MODULE, this.language, "myProjectsTitle"),
-                UXUIDesignText: getText(MODULE, this.language, "UXUIDesignText"),
-                industrialDesignText: getText(MODULE, this.language, "industrialDesignText"),
-                printing3dText: getText(MODULE, this.language, "printing3dText"),
-                viewProjectsText: getText(MODULE, this.language, "viewProjectsText"),
-                contactMeTitle: getText(MODULE, this.language, "contactMeTitle"),
-                downloadMyCVText: getText(MODULE, this.language, "downloadMyCVText"),
+                presentationTitle: getText(MODULE, language, "presentationTitle"),
+                presentationSubTitle: getText(MODULE, language, "presentationSubTitle"),
+                presentationTextFirstParagraph: getText(MODULE, language, "presentationTextFirstParagraph"),
+                presentationTextSecondParagraph: getText(MODULE, language, "presentationTextSecondParagraph"),
+                myProjectsTitle: getText(MODULE, language, "myProjectsTitle"),
+                UXUIDesignText: getText(MODULE, language, "UXUIDesignText"),
+                industrialDesignText: getText(MODULE, language, "industrialDesignText"),
+                printing3dText: getText(MODULE, language, "printing3dText"),
+                viewProjectsText: getText(MODULE, language, "viewProjectsText"),
+                contactMeTitle: getText(MODULE, language, "contactMeTitle"),
+                downloadMyCVText: getText(MODULE, language, "downloadMyCVText"),
             }
         }
     }
+    
 
-    private updateLanguage(language: Languages) {
-        this.language = language;
-        this.language
-        this.setState(this.getUpdatedState());
+    public componentDidUpdate(prevProps: Readonly<IProps>) {
+        if(prevProps.language !== this.props.language){
+            this.setState(this.getUpdatedState(this.props.language));
+        }
     }
 
     public render() {
@@ -60,14 +63,6 @@ export default class AboutMe extends React.Component<{}, IState> {
             <div className="container-fluid padding-zero">
                 <div className="d-flex justify-content-center">
                     <div id="presentation" className="content-width">
-                        <div id="language" className="row">
-                            <div className="col-md-1 offset-md-10 d-flex justify-content-end">
-                                <a id={this.language === Languages.ENGLISH ? "selectedLanguage" : ""} className="language" onClick={() => this.updateLanguage(Languages.ENGLISH)}>English</a>
-                            </div>
-                            <div className="col-md-1 d-flex justify-content-end">
-                                <a id={this.language === Languages.SPANISH ? "selectedLanguage" : ""} className="language" onClick={() => this.updateLanguage(Languages.SPANISH)}>Español</a>
-                            </div>
-                        </div>
                         <div id="clau-picture-and-presentation" className="row">
                             <div id="clau-picture" className="col-md-5">
                                 <img src="./pictures/profile_picture.svg" alt="Clau profile picture"></img>
