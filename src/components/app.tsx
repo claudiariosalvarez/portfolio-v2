@@ -19,8 +19,28 @@ export default class App extends React.Component<{}, IState> {
 
         this.state = {
             currentPage: this.getCurrentPage(),
-            currentLanguage: Languages.ENGLISH
+            currentLanguage: this.getCurrentLanguage()
         }
+    }
+
+    private getCurrentLanguage(): Languages {
+        const storedLang = localStorage.getItem("lang");
+        if(!storedLang) {
+            return Languages.ENGLISH
+        }
+        
+        const lang = Number.parseInt(storedLang);
+        
+        if(lang > 1){
+            return Languages.ENGLISH;
+        }
+
+        return lang;
+    }
+
+    private setLanguage(language: Languages) {
+        localStorage.setItem("lang", language.toString());
+        this.setState({ currentLanguage: language });
     }
 
     private getCurrentPage() {
@@ -37,7 +57,7 @@ export default class App extends React.Component<{}, IState> {
                 <HashRouter>
                     <Header
                         onPageChange={(page) => this.setState({ currentPage: page })}
-                        onLanguageChange={(language) => this.setState({ currentLanguage: language })}
+                        onLanguageChange={(language) => this.setLanguage(language)}
                         language={this.state.currentLanguage}
                         selectedPage={this.state.currentPage} />
                     <Switch>
